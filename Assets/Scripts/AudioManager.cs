@@ -1,7 +1,6 @@
 ﻿using System;
 using UnityEngine;
 
-
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
@@ -26,5 +25,10 @@ public class AudioManager : MonoBehaviour
     {
         var s = Array.Find(sounds, sound => sound.name == clipName);
         s?.source.Play();
+    }
+    
+    private void ForceLinguistUpdate()
+    {
+        // this code will be removed in the next commit
     }
 }
